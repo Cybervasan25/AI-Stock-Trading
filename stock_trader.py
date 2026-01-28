@@ -3,7 +3,7 @@ from collections import deque
 import random
 
 api = tradeapi.REST('AKCIP6PBVKIJJ43ZLLEDIGJ6L5', 'AKtJwbNCZpjbERLrcHmwdhMB1hC1uREjokeyq2de1nvz',
-base_url = 'https://api.alpaca.markets',
+base_url = 'https://api.alpaca.markets', #For paper trading use https://paper-api.alpaca.markets/v2
 api_version = 'v2')
 
 #Checks balance of user's account on Alpaca
@@ -121,4 +121,5 @@ def execute_auto_trade(signal):
         qty = random.randint(1, 20),
         action = signal["action"],
     )
+
   
