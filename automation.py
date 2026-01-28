@@ -8,7 +8,7 @@ import time
 api = tradeapi.REST(
     'APCA_API_KEY_ID',
     'APCA_API_SECRET_KEY',
-    base_url='https://api.alpaca.markets'  
+    base_url='https://api.alpaca.markets' #For paper trading use https://paper-api.alpaca.markets/v2 
 )
 
 
@@ -46,4 +46,5 @@ def main():
         time.sleep(600)
 
 if __name__ == "__main__":
+
     main()
